@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vibeathon — Shanghai 2026</title>
+    <meta name="description" content="A hands-on AI development sandbox at the SMDG Annual Meeting in Shanghai, September 2026. Hosted by GSBN × SMDG.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="plasma-glow plasma-glow--1"></div>
+    <div class="plasma-glow plasma-glow--2"></div>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <div class="brand-partnership">
+                <div class="logo-badge logo-badge--gsbn">GSBN</div>
+                <span class="brand-separator">×</span>
+                <div class="logo-badge logo-badge--smdg">SMDG</div>
+            </div>
+            <div class="tech-tag">SH_2026 // PLENARY</div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">// SMDG Annual Meeting · Shanghai · September 2026</p>
+                    <h1 class="hero-title">
+                        From EDI to AI:
+                        <span class="hero-title--accent">Shape the Future<br>of Shipping</span>
+                    </h1>
+                    <p class="hero-description">Roll up your sleeves in our high-energy development sandbox during this year's SMDG meeting in Shanghai. Bring operational expertise or structural code to unlock rapid framework synthesis with autonomous intelligence.</p>
+                    <a href="#register" class="btn btn--primary">Register Now →</a>
+                </div>
+
+                <div class="hero-visual">
+                    <svg class="network-svg" viewBox="0 0 400 380" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#275FA9" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#72FFD6" stop-opacity="0.8"/>
+                            </linearGradient>
+                            <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="4" result="blur"/>
+                                <feMerge>
+                                    <feMergeNode in="blur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                            <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+                                <feGaussianBlur stdDeviation="2" result="blur"/>
+                                <feMerge>
+                                    <feMergeNode in="blur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Connection lines -->
+                        <g stroke="url(#lineGrad)" stroke-width="1.5" fill="none" opacity="0.6">
+                            <line x1="200" y1="60" x2="80" y2="170"/>
+                            <line x1="200" y1="60" x2="320" y2="170"/>
+                            <line x1="80" y1="170" x2="150" y2="300"/>
+                            <line x1="320" y1="170" x2="250" y2="300"/>
+                            <line x1="150" y1="300" x2="200" y2="60" stroke-dasharray="5 5" opacity="0.3"/>
+                            <line x1="250" y1="300" x2="200" y2="60" stroke-dasharray="5 5" opacity="0.3"/>
+                            <line x1="80" y1="170" x2="320" y2="170" opacity="0.2"/>
+                            <line x1="150" y1="300" x2="250" y2="300"/>
+                            <line x1="200" y1="60" x2="200" y2="200" opacity="0.2"/>
+                            <line x1="80" y1="170" x2="200" y2="230" opacity="0.15" stroke-dasharray="3 3"/>
+                            <line x1="320" y1="170" x2="200" y2="230" opacity="0.15" stroke-dasharray="3 3"/>
+                        </g>
+
+                        <!-- Pulse rings on top node -->
+                        <circle cx="200" cy="60" r="16" fill="none" stroke="#72FFD6" stroke-width="1" opacity="0.3">
+                            <animate attributeName="r" values="16;30;16" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0.3;0.05;0.3" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="200" cy="60" r="22" fill="none" stroke="#72FFD6" stroke-width="0.5" opacity="0.15">
+                            <animate attributeName="r" values="22;40;22" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0.15;0.02;0.15" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+                        </circle>
+
+                        <!-- Nodes -->
+                        <circle cx="200" cy="60" r="8" fill="#72FFD6" filter="url(#neonGlow)">
+                            <animate attributeName="r" values="8;10;8" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="80" cy="170" r="5" fill="#275FA9" filter="url(#softGlow)" opacity="0.9"/>
+                        <circle cx="320" cy="170" r="5" fill="#275FA9" filter="url(#softGlow)" opacity="0.9"/>
+                        <circle cx="150" cy="300" r="6" fill="#357ABC" filter="url(#softGlow)"/>
+                        <circle cx="250" cy="300" r="6" fill="#357ABC" filter="url(#softGlow)"/>
+                        <circle cx="200" cy="215" r="3" fill="#72FFD6" opacity="0.4">
+                            <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+
+                        <!-- Node labels -->
+                        <text x="200" y="44" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="9" fill="#72FFD6" opacity="0.7">AI_CORE</text>
+                        <text x="52" y="164" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="8" fill="#72FFD6" opacity="0.5">DATA</text>
+                        <text x="348" y="164" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="8" fill="#72FFD6" opacity="0.5">PROTO</text>
+                        <text x="150" y="320" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="8" fill="#72FFD6" opacity="0.5">BAPLIE</text>
+                        <text x="250" y="320" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="8" fill="#72FFD6" opacity="0.5">EDIFACT</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- RETURNING TO OUR ROOTS -->
+        <section class="section-roots">
+            <div class="grid-2">
+                <div class="section-text">
+                    <h2>Returning to Our Roots</h2>
+                    <p>In 1987, SMDG pioneers came together to solve data fragmentation. By collaborating on structural baseline protocols like BAPLIE, they decoded intricate systems to build the bedrock of digital freight tracking.</p>
+                    <p>Today's frontier isn't clean database fields—it's navigating structural transformation. The Vibeathon returns directly to that original hands-on builder ethos. It provides our collective networks an isolated sandbox right in Shanghai to demystify generative AI models and map them directly to real supply-chain environments.</p>
+                </div>
+                <div class="terminal-block">
+                    <div class="terminal-header">
+                        <span class="terminal-dot terminal-dot--active"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-filename">smdg_historical.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-cmd">$ initialization --year 1987</p>
+                        <p class="terminal-out">&gt; Loaded legacy structural framework: EDIFACT established</p>
+                        <p class="terminal-out">&gt; Ingesting system protocol: BAPLIE_bayplan_v1.0</p>
+                        <p class="terminal-out terminal-out--dim">&gt; Protocol normalization: complete</p>
+                        <p class="terminal-out terminal-out--dim">&gt; Digital freight tracking: initialized</p>
+                        <br>
+                        <p class="terminal-cmd terminal-cmd--blue">$ update --target 2026_agentic_ai</p>
+                        <p class="terminal-out">&gt; Loading generative AI frameworks...</p>
+                        <p class="terminal-out">&gt; Status: Sandbox environments ready for active compiler deployment</p>
+                        <p class="terminal-cursor">█</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIBECODING EXECUTION PATH -->
+        <section class="section-path">
+            <h2>Vibecoding Execution Path</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Define The Problem</h3>
+                        <span class="card-num">01 //</span>
+                    </div>
+                    <p class="card-desc">Get in teams and work with industry experts interested to tackle similar problems. Then join everyone for a vibecoding workshop.</p>
+                    <button class="video-card" type="button" data-video-src="static/1_teams.mp4" data-video-title="Define The Problem" aria-label="Open Define The Problem video">
+                        <video class="video-card__thumb-video" muted preload="metadata" playsinline src="static/1_teams.mp4"></video>
+                        <div class="video-card__thumb-overlay">
+                            <div class="video-card__play-icon">▶</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Prototype Your Solution</h3>
+                        <span class="card-num">02 //</span>
+                    </div>
+                    <p class="card-desc">Use conversational language within our sandbox environment to bring your solution to reality.</p>
+                    <button class="video-card" type="button" data-video-src="static/2_prototype.mp4" data-video-title="Prototype Your Solution" aria-label="Open Prototype Your Solution video">
+                        <video class="video-card__thumb-video" muted preload="metadata" playsinline src="static/2_prototype.mp4"></video>
+                        <div class="video-card__thumb-overlay">
+                            <div class="video-card__play-icon">▶</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Presentation</h3>
+                        <span class="card-num">03 //</span>
+                    </div>
+                    <p class="card-desc">Demonstrate your solution to your peers and get feedback from industry experts.</p>
+                    <button class="video-card" type="button" data-video-src="static/3_present.mp4" data-video-title="Presentation" aria-label="Open Presentation video">
+                        <video class="video-card__thumb-video" muted preload="metadata" playsinline src="static/3_present.mp4"></video>
+                        <div class="video-card__thumb-overlay">
+                            <div class="video-card__play-icon">▶</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div id="video-modal" class="video-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="video-modal__content" role="document">
+                <div class="video-modal__header">
+                    <h3 class="video-modal__title">Video Preview</h3>
+                    <button type="button" class="video-modal__close" aria-label="Close video">×</button>
+                </div>
+                <video class="video-modal__player" controls playsinline></video>
+            </div>
+        </div>
+
+        <!-- VIBECODE EXAMPLES -->
+        <section class="section-examples">
+            <h2>Vibecode Examples</h2>
+            <div class="example-list">
+                <div class="list-item">
+                    <div class="list-item-content">
+                        <strong class="list-item-title">⚡ 100 Versions of Viewlist Shipments</strong>
+                        <p class="list-item-desc">Jonah and his team vibecoded &gt;100 versions of a web-based application for viewlist shipments. Fully functional applications in under 8 hours.</p>
+                    </div>
+                    <a href="#" class="btn btn--outline">VIEW PROJECT ↗</a>
+                </div>
+                <div class="list-item">
+                    <div class="list-item-content">
+                        <strong class="list-item-title">📄 Smart Terminal Sequencing Module</strong>
+                        <p class="list-item-desc">Assembles live operational telemetry visualizations into container sequence predictors in 180 minutes.</p>
+                    </div>
+                    <a href="#" class="btn btn--outline">MODULE_INDEX ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO IS THIS FOR -->
+        <section class="section-audience">
+            <h2>Who Is This Event For?</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Operations / Business Strategists</h3>
+                        <span class="card-num card-num--sm">// EXEC</span>
+                    </div>
+                    <p class="card-quote">"I process terminal logs, not Python logic."</p>
+                    <p class="card-desc">Perfect. Your logic and understanding of the industry drive the design. If you understand terminal friction points and shipping bottlenecks, you can create a working solution with conversational language.</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Systems Engineers</h3>
+                        <span class="card-num card-num--sm">// STACK</span>
+                    </div>
+                    <p class="card-quote">"I map core data schemas daily."</p>
+                    <p class="card-desc">Excellent. Push local foundational model limits, explore rapid testing deployment and experience building a solution without coding it. Donut &amp; Coffee on us!</p>
+                </div>
+            </div>
+            <div class="guarantee-box">
+                <p class="guarantee-label">[ Our Guarantee ]</p>
+                <p class="guarantee-text">Whether you are technical or not, this event is built for you. Had experience vibecoding? Great. No experience vibecoding? Perfect — we are all here to learn. We will prepare the environment and the technical setup. You just need to bring your ideas and solution-hat to create your solution in under a day.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER CTA -->
+        <section id="register" class="section-cta">
+            <div class="cta-block">
+                <h2 class="cta-title">Let's Honor the SMDG Spirit of 1987</h2>
+                <p class="cta-desc">Join us today at the Vibeathon. Turn your ideas into reality.</p>
+                <a href="#" class="btn btn--primary">REGISTER NOW</a>
+                <span class="cta-watermark">CORE_EXEC_V2026</span>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const videoModal = document.getElementById('video-modal');
+        const videoPlayer = videoModal.querySelector('.video-modal__player');
+        const videoTitle = videoModal.querySelector('.video-modal__title');
+        const closeButton = videoModal.querySelector('.video-modal__close');
+
+        function openVideoModal(src, title) {
+            videoPlayer.src = src;
+            videoTitle.textContent = title;
+            videoModal.classList.add('video-modal--open');
+            videoModal.removeAttribute('aria-hidden');
+            videoPlayer.play().catch(() => {});
+        }
+
+        function closeVideoModal() {
+            videoModal.classList.remove('video-modal--open');
+            videoModal.setAttribute('aria-hidden', 'true');
+            videoPlayer.pause();
+            videoPlayer.removeAttribute('src');
+            videoPlayer.load();
+        }
+
+        document.querySelectorAll('.video-card').forEach((button) => {
+            button.addEventListener('click', () => {
+                openVideoModal(button.dataset.videoSrc, button.dataset.videoTitle);
+            });
+        });
+
+        closeButton.addEventListener('click', closeVideoModal);
+        videoModal.addEventListener('click', (event) => {
+            if (event.target === videoModal) {
+                closeVideoModal();
+            }
+        });
+
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && videoModal.classList.contains('video-modal--open')) {
+                closeVideoModal();
+            }
+        });
+    </script>
+</body>
+</html>
