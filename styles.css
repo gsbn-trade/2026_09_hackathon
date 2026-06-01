@@ -149,6 +149,14 @@ body::before {
     border-left: 3px solid var(--secondary-blue);
 }
 
+.partner-logo {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 .brand-separator {
     opacity: 0.3;
     font-weight: 300;
