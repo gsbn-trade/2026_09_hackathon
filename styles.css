@@ -220,9 +220,39 @@ body::before {
 .hero-description {
     font-size: 16px;
     color: var(--text-body);
-    margin-bottom: 44px;
+    margin-bottom: 24px;
     max-width: 540px;
     line-height: 1.85;
+}
+
+.hero-code-sample {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 20px;
+    border: 1px solid rgba(114, 255, 214, 0.16);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--white);
+    margin-bottom: 36px;
+    max-width: 100%;
+}
+
+.hero-code-sample span {
+    color: var(--tech-teal);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.hero-code-sample code {
+    display: block;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    white-space: pre-wrap;
 }
 
 .hero-visual {
@@ -287,6 +317,8 @@ h2::before {
     border-radius: 6px;
     overflow: hidden;
     font-family: 'Share Tech Mono', monospace;
+    width: 100%;
+    max-width: 560px;
 }
 
 .terminal-header {
