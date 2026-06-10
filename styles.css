@@ -191,6 +191,19 @@ body::before {
     align-items: center;
 }
 
+.hero-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-video .video-card {
+    aspect-ratio: 9 / 16;
+    max-height: 480px;
+    width: 100%;
+    margin-top: 0;
+}
+
 .hero-eyebrow {
     font-family: 'Share Tech Mono', monospace;
     font-size: 12px;
@@ -299,6 +312,13 @@ h2::before {
 /* ============================================================
    ROOTS SECTION — text + terminal
    ============================================================ */
+.roots-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
 .section-text p {
     color: var(--text-body);
     margin-bottom: 18px;
@@ -318,7 +338,6 @@ h2::before {
     overflow: hidden;
     font-family: 'Share Tech Mono', monospace;
     width: 100%;
-    max-width: 560px;
 }
 
 .terminal-header {
@@ -850,8 +869,18 @@ h2::before {
    ============================================================ */
 @media (max-width: 900px) {
     .hero-layout,
+    .roots-layout,
     .grid-2 {
         grid-template-columns: 1fr;
+    }
+
+    .hero-video {
+        order: -1;
+    }
+
+    .hero-video .video-card {
+        aspect-ratio: 16 / 9;
+        max-height: none;
     }
 
     .grid-3 {
