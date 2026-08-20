@@ -310,6 +310,36 @@ h2::before {
 }
 
 /* ============================================================
+   SNEAK PEEK VIDEO SECTION
+   ============================================================ */
+.sneak-peek-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 44px;
+}
+
+.sneak-peek-heading h2 {
+    margin-bottom: 0;
+}
+
+.sneak-peek-player-wrap {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border-teal);
+    background: rgba(9, 18, 34, 0.97);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
+}
+
+.sneak-peek-player {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+/* ============================================================
    ROOTS SECTION — text + terminal
    ============================================================ */
 .roots-layout {

@@ -55,6 +55,17 @@
             </div>
         </section>
 
+        <!-- SNEAK PEEK VIDEO -->
+        <section class="section-sneak-peek">
+            <div class="sneak-peek-heading">
+                <h2>Sneak Peek: a first look at the Vibeathon experience</h2>
+                <span class="tech-tag">NEW</span>
+            </div>
+            <div class="sneak-peek-player-wrap">
+                <video id="sneak-peek-video" class="sneak-peek-player" controls playsinline preload="metadata" muted poster="static/SMDG_v4-poster.jpg" src="static/SMDG_v4.mp4"></video>
+            </div>
+        </section>
+
         <!-- RETURNING TO OUR ROOTS -->
         <section class="section-roots">
             <div class="roots-layout">
@@ -247,6 +258,23 @@
                 closeVideoModal();
             }
         });
+
+        // Campaign deep link: ?play=intro auto-starts the sneak-peek video for
+        // visitors arriving from the marketing link. Per browser autoplay policy
+        // (Chrome, Safari, Firefox — desktop and mobile), a video can only
+        // autoplay without a click if it starts muted; unmuted autoplay is
+        // blocked outright. So this starts muted with visible controls, letting
+        // the visitor opt into sound themselves — the same pattern used by
+        // muted-autoplay video ads on most social platforms.
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('play') === 'intro') {
+            const inlineVideo = document.getElementById('sneak-peek-video');
+            if (inlineVideo) {
+                inlineVideo.muted = true;
+                inlineVideo.play().catch(() => {});
+                inlineVideo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
     </script>
 </body>
 </html>
